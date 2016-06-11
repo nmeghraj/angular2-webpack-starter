@@ -7,18 +7,18 @@ webpackJsonp([3],{
 	/*
 	 * Providers provided by Angular
 	 */
-	var platform_browser_dynamic_1 = __webpack_require__(286);
+	var platform_browser_dynamic_1 = __webpack_require__(291);
 	/*
 	* Platform and Environment
 	* our providers/directives/pipes
 	*/
-	var browser_1 = __webpack_require__(444);
-	var environment_1 = __webpack_require__(447);
+	var browser_1 = __webpack_require__(456);
+	var environment_1 = __webpack_require__(459);
 	/*
 	* App Component
 	* our top level component that holds all of our components
 	*/
-	var app_1 = __webpack_require__(440);
+	var app_1 = __webpack_require__(452);
 	/*
 	 * Bootstrap our Angular app with a top level component `App` and inject
 	 * our Services and Providers into Angular's dependency injection
@@ -51,12 +51,12 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 124:
+/***/ 125:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(1);
-	var angular2_hmr_1 = __webpack_require__(470);
+	var angular2_hmr_1 = __webpack_require__(482);
 	var AppState = (function () {
 	    function AppState() {
 	        // @HmrState() is used by HMR to track the state of any object during a hot module replacement
@@ -102,7 +102,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 127:
+/***/ 128:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -166,7 +166,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 433:
+/***/ 445:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -175,9 +175,9 @@ webpackJsonp([3],{
 	 */
 	var core_1 = __webpack_require__(1);
 	var router_deprecated_1 = __webpack_require__(92);
-	var app_service_1 = __webpack_require__(124);
-	var home_1 = __webpack_require__(435);
-	var router_active_1 = __webpack_require__(441);
+	var app_service_1 = __webpack_require__(125);
+	var home_1 = __webpack_require__(447);
+	var router_active_1 = __webpack_require__(453);
 	/*
 	 * App Component
 	 * Top Level Component
@@ -201,7 +201,7 @@ webpackJsonp([3],{
 	            directives: [router_active_1.RouterActive],
 	            encapsulation: core_1.ViewEncapsulation.None,
 	            styles: [
-	                __webpack_require__(449)
+	                __webpack_require__(461)
 	            ],
 	            template: "\n    <span router-active>\n      <button [routerLink]=\" ['Index'] \">\n        Index\n      </button>\n    </span>\n    <span router-active>\n      <button [routerLink]=\" ['Home'] \">\n        Home\n      </button>\n    </span>\n    <span router-active>\n      <button [routerLink]=\" ['About'] \">\n        About\n      </button>\n    </span>\n\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n\n    <pre class=\"app-state\">this.appState.state = {{ appState.state | json }}</pre>\n  "
 	        }),
@@ -209,7 +209,7 @@ webpackJsonp([3],{
 	            { path: '/', name: 'Index', component: home_1.Home, useAsDefault: true },
 	            { path: '/home', name: 'Home', component: home_1.Home },
 	            // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-	            { path: '/about', name: 'About', loader: function () { return __webpack_require__(448)('About'); } }
+	            { path: '/about', name: 'About', loader: function () { return __webpack_require__(460)('About'); } }
 	        ]), 
 	        __metadata('design:paramtypes', [app_service_1.AppState])
 	    ], App);
@@ -227,14 +227,14 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 434:
+/***/ 446:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(1);
-	var app_service_1 = __webpack_require__(124);
-	var title_1 = __webpack_require__(436);
-	var x_large_1 = __webpack_require__(438);
+	var app_service_1 = __webpack_require__(125);
+	var title_1 = __webpack_require__(448);
+	var x_large_1 = __webpack_require__(450);
 	var Home = (function () {
 	    // TypeScript public modifiers
 	    function Home(appState, title) {
@@ -270,9 +270,9 @@ webpackJsonp([3],{
 	            // We need to tell Angular's compiler which custom pipes are in our template.
 	            pipes: [],
 	            // Our list of styles in our component. We may add more to compose many styles together
-	            styles: [__webpack_require__(450)],
+	            styles: [__webpack_require__(462)],
 	            // Every Angular template is first compiled by the browser before Angular runs it's compiler
-	            template: __webpack_require__(451)
+	            template: __webpack_require__(463)
 	        }), 
 	        __metadata('design:paramtypes', [app_service_1.AppState, title_1.Title])
 	    ], Home);
@@ -283,36 +283,36 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 435:
+/***/ 447:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(434));
+	__export(__webpack_require__(446));
 	
 
 /***/ },
 
-/***/ 436:
+/***/ 448:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(437));
+	__export(__webpack_require__(449));
 	
 
 /***/ },
 
-/***/ 437:
+/***/ 449:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(1);
-	var http_1 = __webpack_require__(179);
+	var http_1 = __webpack_require__(180);
 	var Title = (function () {
 	    function Title(http) {
 	        this.http = http;
@@ -337,19 +337,19 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 438:
+/***/ 450:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(439));
+	__export(__webpack_require__(451));
 	
 
 /***/ },
 
-/***/ 439:
+/***/ 451:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -379,7 +379,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 440:
+/***/ 452:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -387,9 +387,9 @@ webpackJsonp([3],{
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	// App
-	__export(__webpack_require__(433));
-	__export(__webpack_require__(124));
-	var app_service_2 = __webpack_require__(124);
+	__export(__webpack_require__(445));
+	__export(__webpack_require__(125));
+	var app_service_2 = __webpack_require__(125);
 	// Application wide providers
 	exports.APP_PROVIDERS = [
 	    app_service_2.AppState
@@ -398,7 +398,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 441:
+/***/ 453:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -406,12 +406,12 @@ webpackJsonp([3],{
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	// Application level directive
-	__export(__webpack_require__(442));
+	__export(__webpack_require__(454));
 	
 
 /***/ },
 
-/***/ 442:
+/***/ 454:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -486,7 +486,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 443:
+/***/ 455:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -505,21 +505,21 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 444:
+/***/ 456:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(443));
-	__export(__webpack_require__(445));
-	__export(__webpack_require__(446));
+	__export(__webpack_require__(455));
+	__export(__webpack_require__(457));
+	__export(__webpack_require__(458));
 	
 
 /***/ },
 
-/***/ 445:
+/***/ 457:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -536,7 +536,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 446:
+/***/ 458:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -546,7 +546,7 @@ webpackJsonp([3],{
 	// Angular 2
 	var common_1 = __webpack_require__(52);
 	// Angular 2 Http
-	var http_1 = __webpack_require__(179);
+	var http_1 = __webpack_require__(180);
 	// Angular 2 Router
 	var router_deprecated_1 = __webpack_require__(92);
 	/*
@@ -561,7 +561,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 447:
+/***/ 459:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -583,16 +583,16 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 448:
+/***/ 460:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = function (namespace) {
 	  return new Promise(function (resolve) {
 	    __webpack_require__.e/* nsure */(1, function (require) {
 	      if (namespace) {
-	        resolve(__webpack_require__(347)[namespace]);
+	        resolve(__webpack_require__(352)[namespace]);
 	      } else {
-	        resolve(__webpack_require__(347));
+	        resolve(__webpack_require__(352));
 	      }
 	    });
 	  });
@@ -600,32 +600,32 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 449:
+/***/ 461:
 /***/ function(module, exports) {
 
 	module.exports = "html, body{\n  height: 100%;\n  font-family: Arial, Helvetica, sans-serif\n}\n\nspan.active {\n  background-color: gray;\n}\n"
 
 /***/ },
 
-/***/ 450:
+/***/ 462:
 /***/ function(module, exports) {
 
 	module.exports = "/*styles for home content only*/"
 
 /***/ },
 
-/***/ 451:
+/***/ 463:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card-container\">\n  <h1 x-large class=\"sample-content\">Your Content Here</h1>\n\n  <div>\n    For material design components use the <a href=\"https://github.com/AngularClass/angular2-webpack-starter/tree/material2\"><b>material2</b></a> branch\n  </div>\n\n  <hr>\n\n  <div>\n    For hot module reloading run\n    <pre>npm run start:hmr</pre>\n  </div>\n  \n  <hr>\n\n  <div>\n    <h4>Local State</h4>\n\n    <form (ngSubmit)=\"submitState(localState.value)\" autocomplete=\"off\">\n\n      <input placeholder=\"Submit Local State to App State\" [value]=\"localState.value\" (input)=\"localState.value = $event.target.value\"\n        autofocus>\n\n      <button md-raised-button color=\"primary\">Submit Value</button>\n    </form>\n    <!--\n        <input type=\"text\" [value]=\"localState.value\" (input)=\"localState.value = $event.target.value\" autofocus>\n        Rather than wiring up two-way data-binding ourselves with [value] and (input)\n        we can use Angular's [(ngModel)] syntax\n        <input type=\"text\" [(ngModel)]=\"localState.value\" autofocus>\n      -->\n\n    <pre>this.localState = {{ localState | json }}</pre>\n\n  </div>\n\n</div>\n"
 
 /***/ },
 
-/***/ 469:
+/***/ 481:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {"use strict";
-	var hmr_store_1 = __webpack_require__(127);
+	var hmr_store_1 = __webpack_require__(128);
 	// noop in parentNode
 	// TODO: find a better way to noop
 	var _env = typeof process !== 'undefined' &&
@@ -675,21 +675,21 @@ webpackJsonp([3],{
 	}
 	exports.HmrState = HmrState;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(346)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(351)))
 
 /***/ },
 
-/***/ 470:
+/***/ 482:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	var hmr_store_1 = __webpack_require__(127);
-	__export(__webpack_require__(471));
-	__export(__webpack_require__(469));
-	__export(__webpack_require__(127));
+	var hmr_store_1 = __webpack_require__(128);
+	__export(__webpack_require__(483));
+	__export(__webpack_require__(481));
+	__export(__webpack_require__(128));
 	function provideHmrState(initialState) {
 	    if (initialState === void 0) { initialState = {}; }
 	    return [
@@ -702,11 +702,11 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 471:
+/***/ 483:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var hmr_store_1 = __webpack_require__(127);
+	var hmr_store_1 = __webpack_require__(128);
 	function hotModuleReplacement(bootloader, module, options) {
 	    if (options === void 0) { options = {}; }
 	    if (!module.hot) {
