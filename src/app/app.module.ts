@@ -12,7 +12,8 @@ import {
 } from '@angularclass/hmr';
 import {
   RouterModule,
-  PreloadAllModules
+  PreloadAllModules,
+  NoPreloading
 } from '@angular/router';
 
 /*
@@ -60,7 +61,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: NoPreloading })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
